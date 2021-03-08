@@ -17,6 +17,16 @@ describe("medianScore", () => {
   });
 });
 
+describe("medianScore", () => {
+  it("should reflect a lack of coverage if students is null", () => {
+    const students = [];
+    const actual = medianScore(students);
+    const expected = null;
+    // expect(actual).to.be.a("number");
+    expect(actual).to.be.null;
+  });
+});
+
 describe("topScoringStudent", () => {
   it("should return the student with the highest score for a list of students", () => {
     const students = [
@@ -31,5 +41,15 @@ describe("topScoringStudent", () => {
     // different objects in memory 
     // expect(actual).to.be.an("object");
     expect(actual).to.eql(expected);
+  });
+});
+
+describe("topScoringStudent", () => {
+  it("should reflect a lack of coverage if students is null", () => {
+    const students = [];
+    const actual = topScoringStudent(students);
+    const expected = null;
+    // expect(actual).to.be.a("number");
+    expect(actual).to.be.null;
   });
 });

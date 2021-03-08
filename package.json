@@ -1,16 +1,29 @@
 {
   "name": "starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "The table below describes the files and folders in the starter code:",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests"
+    "test": "nyc --reporter=text mocha tests"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^8.0.1"
-  }
+    "mocha": "^8.0.1",
+    "nyc": "^15.1.0"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamiehardesty/more-chai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jamiehardesty/more-chai/issues"
+  },
+  "homepage": "https://github.com/jamiehardesty/more-chai#readme"
 }
