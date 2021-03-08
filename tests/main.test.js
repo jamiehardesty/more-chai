@@ -28,7 +28,8 @@ describe("topScoringStudent", () => {
     ];
     const actual = topScoringStudent(students);
     const expected = { name: "Riley Morgan", score: 9.8 };
-    expect(actual).to.be.an("object");
-    expect(actual).to.equal(expected);
+    // different objects in memory 
+    // expect(actual).to.be.an("object");
+    expect(actual).to.eql(expected);
   });
 });
