@@ -15,9 +15,7 @@ describe("medianScore", () => {
     expect(actual).to.be.a("number");
     expect(actual).to.equal(expected);
   });
-});
-
-describe("medianScore", () => {
+  
   it("should reflect a lack of coverage if students is null", () => {
     const students = [];
     const actual = medianScore(students);
@@ -42,9 +40,6 @@ describe("topScoringStudent", () => {
     // expect(actual).to.be.an("object");
     expect(actual).to.eql(expected);
   });
-});
-
-describe("topScoringStudent", () => {
   it("should reflect a lack of coverage if students is null", () => {
     const students = [];
     const actual = topScoringStudent(students);
